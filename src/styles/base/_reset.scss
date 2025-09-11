@@ -1,0 +1,10 @@
+
+@use '../abstracts/variables' as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: v.$font-main;
+  color: v.$light;
+}

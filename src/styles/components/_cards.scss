@@ -1,0 +1,49 @@
+
+@use '../abstracts' as *;
+
+.card {
+  background-color: $light;
+  border-radius: $radius;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &__img {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-family: $font-title;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: $dark;
+  }
+
+  &__price {
+    color: $accent;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  &__btn {
+    background-color: $accent;
+    color: $light;
+    border: none;
+    border-radius: $radius;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 100%;
+  }
+}

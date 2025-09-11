@@ -1,0 +1,16 @@
+
+@use '../abstracts' as *;
+
+button {
+  background-color: $accent;
+  color: $light;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: $radius;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    background-color: darken($accent, 10%);
+  }
+}

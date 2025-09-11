@@ -1,0 +1,39 @@
+// Nosotros page styles
+.nosotros {
+  padding: 1rem 0 2rem;
+
+  &__header {
+    margin-bottom: 1rem;
+    h1 { font-size: clamp(1.5rem, 3vw, 2rem); }
+    p { max-width: 60ch; opacity: .9; }
+  }
+
+  &__loading { opacity: .8; }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  &__card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 4px 18px rgba(0,0,0,.07);
+    outline: none;
+  }
+
+  &__avatar { font-size: 2rem; }
+  &__name { margin: .25rem 0; }
+  &__role { font-weight: 600; opacity: .9; }
+  &__desc { opacity: .85; }
+
+  // Responsive
+  @media (min-width: 640px) {
+    &__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (min-width: 1024px) {
+    &__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+}
